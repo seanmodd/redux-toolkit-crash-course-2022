@@ -30,7 +30,8 @@ const CounterRedux = () => {
     // const clickIncrByAmnt = (e) => {
     // console.log('this is e: ', e);
     console.log('this is counter: ', counter);
-    dispatch(incrementByAmount(counter));
+    console.log('this is counter: ', typeof counter);
+    dispatch(incrementByAmount(parseInt(counter)));
   };
 
   return (
@@ -62,6 +63,7 @@ const CounterRedux = () => {
                   onClick={(event) => {
                     event.preventDefault();
                     clickIncrByAmnt();
+                    // clickIncrByAmnt(counter);
                   }}
                   className="m-1 btn btn-success"
                 >
