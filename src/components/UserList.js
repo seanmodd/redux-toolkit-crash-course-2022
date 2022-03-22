@@ -35,8 +35,8 @@ const UserListRedux = () => {
             <h3 className="text-danger">{errorMessage}</h3>
           )}
           {!loading && users.length > 0 && (
-            <table className="table table-hover text-center table-sthiped">
-              <thead className="bg-primary text-white">
+            <table className="table text-center table-hover table-sthiped">
+              <thead className="text-white bg-primary">
                 <tr>
                   <th>SNO</th>
                   <th>Name</th>
