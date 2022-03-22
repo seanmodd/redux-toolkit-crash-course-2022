@@ -6,6 +6,7 @@ import {
   incrementBy,
   incrementByAmount,
 } from '../redux/features/counter.feature';
+import '../index.css';
 
 const CounterRedux = () => {
   const dispatch = useDispatch();
