@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EmployeeService } from '../services/EmployeeService';
+import { EmployeeService } from '../../services/EmployeeService';
 
 const Employees = () => {
   const [state, setState] = useState({
