@@ -95,5 +95,6 @@ module.exports = {
     'react/button-has-type': 'off',
     'no-unused-vars': 'off',
     'no-plusplus': 'off',
+    'import-order': 'off',
   },
 };
