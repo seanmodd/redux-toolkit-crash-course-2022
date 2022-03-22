@@ -33,13 +33,13 @@ const CounterRedux = () => {
           <div className="card">
             <div className="card-body">
               <p className="h3 display-3">{count}</p>
-              <button onClick={clickIncr} className="btn btn-success m-1">
+              <button onClick={clickIncr} className="m-1 btn btn-success">
                 Increment
               </button>
-              <button onClick={clickDecr} className="btn btn-warning m-1">
+              <button onClick={clickDecr} className="m-1 btn btn-warning">
                 Decrement
               </button>
-              <button onClick={clickIncrBy} className="btn btn-danger m-1">
+              <button onClick={clickIncrBy} className="m-1 btn btn-danger">
                 Increment by 5
               </button>
             </div>
