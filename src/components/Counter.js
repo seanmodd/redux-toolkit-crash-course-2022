@@ -27,11 +27,7 @@ const CounterRedux = () => {
     dispatch(incrementBy(5));
   };
   const clickIncrByAmnt = () => {
-    // const clickIncrByAmnt = (e) => {
-    // console.log('this is e: ', e);
-    console.log('this is counter: ', counter);
-    console.log('this is counter: ', typeof counter);
-    dispatch(incrementByAmount(parseInt(counter)));
+    dispatch(incrementByAmount(counter));
   };
 
   return (
@@ -55,7 +51,8 @@ const CounterRedux = () => {
                 <input
                   type="number"
                   className="form-control"
-                  onChange={(event) => setCounter(event.target.value)}
+                  style={{ width: '100px' }}
+                  onChange={(event) => setCounter(parseInt(event.target.value))}
                   value={counter}
                 />
                 <button
@@ -63,11 +60,10 @@ const CounterRedux = () => {
                   onClick={(event) => {
                     event.preventDefault();
                     clickIncrByAmnt();
-                    // clickIncrByAmnt(counter);
                   }}
                   className="m-1 btn btn-success"
                 >
-                  Increment by Amount
+                  Increment by Amount {counter}
                 </button>
               </form>
             </div>
