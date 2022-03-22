@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import CounterRedux from 'src/components/Counter';
+import CounterRedux from './components/Counter';
 import Home from './components/layout/Home';
 import NavBar from './components/layout/NavBar';
 import EmployeesRedux from './components/Employees';
