@@ -20,7 +20,7 @@ const EmployeesRedux = () => {
     <div className="container mt-3">
       <div className="row">
         <div className="col">
-          <p className="h3 text-primary">Employees</p>
+          <p className="h3 text-primary">Employees with Redux</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea,
             eos officia ratione reiciendis repellendus sapiente sit sunt
@@ -51,7 +51,7 @@ const EmployeesRedux = () => {
             employees.map((employee) => (
               <div key={employee.id}>
                 {employee.isSelected && (
-                  <div className="card my-2">
+                  <div className="my-2 card">
                     <div className="card-body">
                       <ul className="list-group">
                         <li className="list-group-item">

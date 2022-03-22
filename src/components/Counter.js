@@ -29,7 +29,7 @@ const CounterRedux = () => {
   return (
     <div className="container mt-5">
       <div className="row">
-        <p className="h3 text-primary">Counter With Redux</p>
+        <p className="h3 text-primary">Counter with Redux</p>
         <div className="col-md-4">
           <div className="card">
             <div className="card-body">
