@@ -1,33 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { getUsers } from '../redux/features/user-list.feature';
 
-const UserList = () => {
-  const [state, setState] = useState({
-    loading: false,
-    users: [],
-    errorMessage: '',
-  });
+const UserListRedux = () => {
+  const dispatch = useDispatch();
+
+  // get data from Redux Store
+  const userState = useSelector((store) => store.users);
 
   useEffect(async () => {
-    try {
-      setState({ ...state, loading: true });
-      const dataUrl = `https://jsonplaceholder.typicode.com/users`;
-      const response = await axios.get(dataUrl);
-      setState({
-        ...state,
-        users: response.data,
-        loading: false,
-      });
-    } catch (error) {
-      setState({
-        ...state,
-        errorMessage: error,
-        loading: false,
-      });
-    }
-  }, []);
+    dispatch(getUsers()); // dispatch action
+  }, [dispatch]);
 
-  const { loading, errorMessage, users } = state;
+  const { loading, errorMessage, users } = userState;
 
   return (
     <div className="container mt-3">
@@ -45,7 +31,7 @@ const UserList = () => {
       <div className="row">
         <div className="col">
           {loading && <h2 className="fw-bold">...Loading</h2>}
-          {!loading && errorMessage.length > 0 && (
+          {!loading && errorMessage && (
             <h3 className="text-danger">{errorMessage}</h3>
           )}
           {!loading && users.length > 0 && (
@@ -79,4 +65,4 @@ const UserList = () => {
     </div>
   );
 };
-export default UserList;
+export default UserListRedux;

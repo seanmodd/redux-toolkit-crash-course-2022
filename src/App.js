@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import NavBar from './components/NavBar';
-import CounterRedux from './components/CounterRedux';
-import EmployeesRedux from './components/EmployeesRedux';
-import UserListRedux from './components/UserListRedux';
+import Home from './components/layout/Home';
+import NavBar from './components/layout/NavBar';
+import CounterRedux from './components/Counter';
+import EmployeesRedux from './components/Employees';
+import UserListRedux from './components/UserList';
 
 function App() {
   return (
