@@ -26,6 +26,7 @@ const Counter = () => {
   return (
     <div className="container mt-5">
       <div className="row">
+        <p className="h3 text-primary">Counter Missing Redux</p>
         <div className="col-md-4">
           <div className="card">
             <div className="card-body">

@@ -33,7 +33,7 @@ const UserList = () => {
     <div className="container mt-3">
       <div className="row">
         <div className="col">
-          <p className="h3 text-primary">User List</p>
+          <p className="h3 text-primary">User List Missing Redux</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum
             minus recusandae voluptate. Animi assumenda consequatur deserunt
