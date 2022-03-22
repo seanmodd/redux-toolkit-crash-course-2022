@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import CounterRedux from './components/Counter';
 import Home from './components/layout/Home';
 import NavBar from './components/layout/NavBar';
-import EmployeesRedux from './components/Employees';
-import UserListRedux from './components/UserList';
+// import Counter from './components/CounterMissing';
+// import Employees from './components/EmployeesMissing';
+// import UserList from './components/UserListMissing';
+import Counter from './components/Counter';
+import Employees from './components/Employees';
+import UserList from './components/UserList';
 
 function App() {
   return (
@@ -13,9 +16,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/employees" element={<EmployeesRedux />} />
-        <Route path="/counter" element={<CounterRedux />} />
-        <Route path="/users" element={<UserListRedux />} />
+        <Route path="/employees" element={<Employees />} />
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/users" element={<UserList />} />
       </Routes>
     </>
   );
