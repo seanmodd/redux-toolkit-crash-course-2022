@@ -1,5 +1,5 @@
 - WIP App for [React Redux Toolkit Crash Course 2022 | React Redux Tutorials 2022 | NAVEEN SAGGAM](https://www.youtube.com/watch?v=s2s15tmxPpA)
-### See original GitHub repo from Naveen Saggam [here](https://github.com/thenaveensaggam/react-redux-toolkit-crash-course-2022)
+- See original GitHub repo from Naveen Saggam [here](https://github.com/thenaveensaggam/react-redux-toolkit-crash-course-2022)
 
 ---
 
