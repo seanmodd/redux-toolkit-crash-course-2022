@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { EmployeeService } from '../services/EmployeeService';
+// import { EmployeeService } from '../services/EmployeeService';
 import { updateSelected } from '../redux/features/employees.feature';
 
 const EmployeesRedux = () => {
