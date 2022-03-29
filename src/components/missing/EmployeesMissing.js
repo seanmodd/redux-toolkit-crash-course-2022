@@ -28,7 +28,9 @@ const Employees = () => {
     <div className="container mt-3">
       <div className="row">
         <div className="col">
-          <p className="h3 text-primary">Employees Missing Redux</p>
+          <p className="h3 text-primary">
+            Employees Missing Redux, But Currently WIP
+          </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea,
             eos officia ratione reiciendis repellendus sapiente sit sunt
