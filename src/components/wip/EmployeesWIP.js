@@ -24,39 +24,35 @@ const Employees = () => {
     });
   };
 
-  const employeeList =
-    employees.length > 0 &&
-    employees.map((employee) => (
-      <li key={employee.id} className="list-group-item">
-        <input
-          onChange={() => updateSelected(employee.id)}
-          type="checkbox"
-          className="form-check-input me-2"
-        />
-        {employee.name}
-      </li>
-    ));
+  const employeeList = employees.map((employee) => (
+    <li key={employee.id} className="list-group-item">
+      <input
+        onChange={() => updateSelected(employee.id)}
+        type="checkbox"
+        className="form-check-input me-2"
+      />
+      {employee.name}
+    </li>
+  ));
 
-  const checkmarkedEmployees =
-    employees.length > 0 &&
-    employees.map((employee) => (
-      <div key={employee.id}>
-        {employee.isSelected && (
-          <div className="my-2 card">
-            <div className="card-body">
-              <ul className="list-group">
-                <li className="list-group-item">
-                  Name : <span className="fw-bold">{employee.name}</span>
-                </li>
-                <li className="list-group-item">
-                  Email : <span className="fw-bold">{employee.email}</span>
-                </li>
-              </ul>
-            </div>
+  const checkmarkedEmployees = employees.map((employee) => (
+    <div key={employee.id}>
+      {employee.isSelected && (
+        <div className="my-2 card">
+          <div className="card-body">
+            <ul className="list-group">
+              <li className="list-group-item">
+                Name : <span className="fw-bold">{employee.name}</span>
+              </li>
+              <li className="list-group-item">
+                Email : <span className="fw-bold">{employee.email}</span>
+              </li>
+            </ul>
           </div>
-        )}
-      </div>
-    ));
+        </div>
+      )}
+    </div>
+  ));
 
   return (
     <div className="container mt-3">
@@ -73,9 +69,19 @@ const Employees = () => {
       </div>
       <div className="row">
         <div className="col-md-6">
-          <ul className="list-group">{employeeList}</ul>
+          <ul className="list-group">
+            {
+              // employees.length > 0 &&
+              employeeList
+            }
+          </ul>
         </div>
-        <div className="col-md-6">{checkmarkedEmployees}</div>
+        <div className="col-md-6">
+          {
+            // employees.length > 0 &&
+            checkmarkedEmployees
+          }
+        </div>
       </div>
     </div>
   );
